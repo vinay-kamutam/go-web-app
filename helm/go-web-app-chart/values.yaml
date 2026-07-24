@@ -9,7 +9,7 @@ image:
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
 <<<<<<< HEAD
-  tag: "30052541978"
+  tag: "30056818274"
 >>>>>>> 69009d0 (Update Helm chart image tag to 30052541978)
 
 ingress:
