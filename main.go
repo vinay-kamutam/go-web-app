@@ -26,14 +26,12 @@ func contactPage(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+    http.HandleFunc("/", homePage)
+    http.HandleFunc("/home", homePage)
+    http.HandleFunc("/courses", coursePage)
+    http.HandleFunc("/about", aboutPage)
+    http.HandleFunc("/contact", contactPage)
 
-	http.HandleFunc("/home", homePage)
-	http.HandleFunc("/courses", coursePage)
-	http.HandleFunc("/about", aboutPage)
-	http.HandleFunc("/contact", contactPage)
-
-	err := http.ListenAndServe("0.0.0.0:8080", nil)
-	if err != nil {
-		log.Fatal(err)
-	}
+    log.Println("Server started on :8080")
+    log.Fatal(http.ListenAndServe("0.0.0.0:8080", nil))
 }
