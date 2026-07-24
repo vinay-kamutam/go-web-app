@@ -8,7 +8,9 @@ image:
   repository: vinaykamutam/go-web-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "30055829694"
+<<<<<<< HEAD
+  tag: "30052541978"
+>>>>>>> 69009d0 (Update Helm chart image tag to 30052541978)
 
 ingress:
   enabled: false
